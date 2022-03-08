@@ -669,7 +669,7 @@ class Message
      *
      * @param string $collapseId The collapse ID of the remote notification.
      */
-    public function setCollapseId($collapseId)
+    public function setCollapseId(string $collapseId)
     {
         $this->collapseId = $collapseId;
     }
@@ -677,9 +677,9 @@ class Message
     /**
      * Get the collapse ID of the remote notification.
      *
-     * @return int The collapse ID of the remote notification.
+     * @return string The collapse ID of the remote notification.
      */
-    public function getCollapseId()
+    public function getCollapseId(): string
     {
         return $this->collapseId;
     }
